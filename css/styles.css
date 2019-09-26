@@ -1,48 +1,154 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+button {
+  padding: 15px 69px 12px;
+  background: #ffffff;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #001958;
+  border: none;
 }
 
 .container {
   width: 100%;
 }
+
 .container .hero-block {
   width: 100%;
   height: 100vh;
-  background-image: url("https://windeurope.org/summit2018/wp-content/uploads/gws-summit-2018-banner-plenary.jpg");
+  background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 100%), url("../img/Rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container .hero-block .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 38px 52px 0 52px;
 }
-.container .hero-block .header button {
-  padding: 15px 69px 12px;
-  margin: 38px 52px 0 0;
-  background: #FFFFFF;
-  border-radius: 100px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  color: #001958;
-}
+
 .container .hero-block .hero-block-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 122px;
+  width: 400px;
 }
+
 .container .hero-block .hero-block-information img {
   margin-right: 39px;
 }
+
 .container .hero-block .hero-block-information .hero-block-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-}
-.container .hero-block .hero-block-information .hero-block-details span {
-  font-family: Poppins;
-  color: #FFFFFF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 
+.container .hero-block .hero-block-information .hero-block-details h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: -6px;
+}
+
+.container .hero-block .hero-block-information .hero-block-details span {
+  font-family: Poppins;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container .hero-block .hero-block-information button {
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.container .conference-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 39px;
+}
+
+.container .conference-details h2 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: #001958;
+}
+
+.container .conference-details .conference-data {
+  width: 100%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .conference-details .conference-data .item-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .conference-details .conference-data .item-details .item-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+
+.container .conference-details .conference-data .item-details .item-data {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 75px;
+  color: #828282;
+}
 /*# sourceMappingURL=styles.css.map */

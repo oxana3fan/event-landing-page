@@ -1,46 +1,119 @@
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+button {
+  padding: 15px 69px 12px;
+  background: #ffffff;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #001958;
+  border: none;
 }
 
 .container {
+  width: 100%;
+
+  .hero-block {
     width: 100%;
-    .hero-block {
-        width: 100%;
-        height: 100vh;
-        background-image: url('https://windeurope.org/summit2018/wp-content/uploads/gws-summit-2018-banner-plenary.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        .header {
-            display: flex;
-            justify-content: flex-end;
-            button {
-                padding: 15px 69px 12px;
-                margin: 38px 52px 0 0;
-                background: #FFFFFF;
-                border-radius: 100px;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 30px;
-                display: flex;
-                align-items: center;
-                color: #001958;
-            }
-        }
-        .hero-block-information {
-            display: flex;
-            margin: 122px;
-            img {
-                margin-right: 39px;
-            }
-            .hero-block-details {
-                display: flex;
-                flex-flow: column wrap;
-                span {
-                    font-family: Poppins;
-                    color: #FFFFFF;
-                }
-            }
-        }
+    height: 100vh;
+    background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 100%),
+      url("../img/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 38px 52px 0 52px;
     }
+
+    .hero-block-information {
+      display: flex;
+      align-items: flex-start;
+      margin: 122px;
+      width: 400px;
+
+      img {
+        margin-right: 39px;
+      }
+
+      .hero-block-details {
+        display: flex;
+        flex-flow: column wrap;
+
+        h1 {
+          font-family: "Poppins";
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 44px;
+          color: #ffffff;
+          margin-bottom: 30px;
+          margin-top: -6px;
+        }
+
+        span {
+          font-family: Poppins;
+          color: #ffffff;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      button {
+        margin-top: 50px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .conference-details {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 39px;
+
+    h2 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 60px;
+      color: #001958;
+    }
+
+    .conference-data {
+      width: 100%;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+
+      .item-details {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .item-title {
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          color: #4f4f4f;
+        }
+
+        .item-data {
+          font-family: Poppins;
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 75px;
+          color: #828282;
+        }
+      }
+    }
+  }
 }
