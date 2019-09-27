@@ -11,9 +11,10 @@ button {
   font-size: 20px;
   line-height: 30px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   color: #001958;
   border: none;
+  width: 286px;
 }
 
 .container {
@@ -26,26 +27,57 @@ button {
       url("../img/Rectangle.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+
+    @media only screen and (max-width: 360px) {
+      background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 130%),
+      url("../img/Rectangle.png");
+    }
 
     .header {
-      display: flex;
-      justify-content: flex-end;
-      padding: 38px 52px 0 52px;
+      @media only screen and (min-width: 361px) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 38px 52px 0 52px;
+      }
+      
+      @media only screen and (max-width: 360px) {
+        display: none;
+      }
     }
 
     .hero-block-information {
       display: flex;
-      align-items: flex-start;
-      margin: 122px;
-      width: 400px;
+      max-width: 400px;
+
+      @media only screen and (min-width: 361px) {
+        margin: 122px;
+        align-items: flex-start;
+      }
+
+      @media only screen and (max-width: 360px) {
+        flex-flow: column;
+        justify-content: flex-start;
+        padding: 60px 20px 20px 20px;
+      }
 
       img {
-        margin-right: 39px;
+        @media only screen and (min-width: 361px) {
+          margin-right: 39px;
+        }
+
+        @media only screen and (max-width: 360px) {
+          width: 48px;
+        }
       }
 
       .hero-block-details {
         display: flex;
         flex-flow: column wrap;
+
+        @media only screen and (max-width: 360px) {
+          padding-top: 31px;
+        }
 
         h1 {
           font-family: "Poppins";
@@ -69,6 +101,11 @@ button {
       button {
         margin-top: 50px;
         margin-bottom: 12px;
+
+        @media only screen and (max-width: 360px) {
+          padding: 14px 51px 12px;
+          width: 250px;
+        }
       }
     }
   }
@@ -79,24 +116,40 @@ button {
     flex-flow: column wrap;
     padding: 39px;
 
+    @media only screen and (max-width: 360px) {
+      padding: 20px;
+      padding-bottom: 0;
+    }
+
     h2 {
       font-family: Poppins;
       font-weight: bold;
       font-size: 40px;
       line-height: 60px;
       color: #001958;
+
+      @media only screen and (max-width: 360px) {
+        font-size: 30px;
+        line-height: 45px;
+      }
     }
 
     .conference-data {
       width: 100%;
       padding-top: 20px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
 
       .item-details {
         display: flex;
         flex-flow: column;
         align-items: center;
+
+        @media only screen and (max-width: 360px) {
+          flex-basis: 50%;
+          margin-bottom: 20px;
+        }
 
         .item-title {
           font-family: Poppins;
@@ -117,3 +170,4 @@ button {
     }
   }
 }
+

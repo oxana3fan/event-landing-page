@@ -13,11 +13,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #001958;
   border: none;
+  width: 286px;
 }
 
 .container {
@@ -30,31 +31,72 @@ button {
   background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 100%), url("../img/Rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
-.container .hero-block .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 38px 52px 0 52px;
+@media only screen and (max-width: 360px) {
+  .container .hero-block {
+    background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 130%), url("../img/Rectangle.png");
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  .container .hero-block .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 38px 52px 0 52px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container .hero-block .header {
+    display: none;
+  }
 }
 
 .container .hero-block .hero-block-information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 122px;
-  width: 400px;
+  max-width: 400px;
 }
 
-.container .hero-block .hero-block-information img {
-  margin-right: 39px;
+@media only screen and (min-width: 361px) {
+  .container .hero-block .hero-block-information {
+    margin: 122px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container .hero-block .hero-block-information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 60px 20px 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  .container .hero-block .hero-block-information img {
+    margin-right: 39px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container .hero-block .hero-block-information img {
+    width: 48px;
+  }
 }
 
 .container .hero-block .hero-block-information .hero-block-details {
@@ -65,6 +107,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+
+@media only screen and (max-width: 360px) {
+  .container .hero-block .hero-block-information .hero-block-details {
+    padding-top: 31px;
+  }
 }
 
 .container .hero-block .hero-block-information .hero-block-details h1 {
@@ -90,6 +138,13 @@ button {
   margin-bottom: 12px;
 }
 
+@media only screen and (max-width: 360px) {
+  .container .hero-block .hero-block-information button {
+    padding: 14px 51px 12px;
+    width: 250px;
+  }
+}
+
 .container .conference-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,6 +159,13 @@ button {
   padding: 39px;
 }
 
+@media only screen and (max-width: 360px) {
+  .container .conference-details {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+}
+
 .container .conference-details h2 {
   font-family: Poppins;
   font-weight: bold;
@@ -112,12 +174,21 @@ button {
   color: #001958;
 }
 
+@media only screen and (max-width: 360px) {
+  .container .conference-details h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
 .container .conference-details .conference-data {
   width: 100%;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -134,6 +205,14 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 360px) {
+  .container .conference-details .conference-data .item-details {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 .container .conference-details .conference-data .item-details .item-title {
